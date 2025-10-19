@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+/* Nav Bar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: rgba(15, 15, 35, 0.95);
+    z-index: 1000;
 }
 
 .nav-container {
@@ -34,4 +36,35 @@
 .nav-link {
     color: #fff;
     text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #0f0f23 0%, #1a1a3e 50%, #1616a8 100%);
+    color: white;
+}
+
+.welcome-text {
+    font-size: 0.9rem;
+    color: #667eea;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+}
+
+.hero-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-contact span {
+    font-size: 0.9rem;
+    color: #b8b8d1;
 }
