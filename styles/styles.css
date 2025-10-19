@@ -59,12 +59,17 @@
 
 .hero-contact {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .hero-contact span {
     font-size: 0.9rem;
     color: #b8b8d1;
+}
+
+.hero-contact i {
+    margin-right: 0.5rem;
+    color: #667eea;
 }
