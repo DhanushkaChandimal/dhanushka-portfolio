@@ -48,6 +48,10 @@
     color: white;
 }
 
+.hero-content {
+    text-align: center;
+}
+
 .welcome-text {
     font-size: 0.9rem;
     color: #667eea;
@@ -55,6 +59,11 @@
 
 .hero-title {
     font-size: 3.5rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #b8b8d1;
 }
 
 .hero-contact {
