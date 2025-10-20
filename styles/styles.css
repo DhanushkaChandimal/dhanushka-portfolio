@@ -137,3 +137,13 @@ body {
     color: #4A5568;
     line-height: 1.6;
 }
+
+.timeline-event.left {
+    text-align: right;
+    margin-right: calc(50%);
+}
+
+.timeline-event.right {
+    text-align: left;
+    margin-left: calc(50%);
+}
