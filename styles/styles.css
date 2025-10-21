@@ -148,6 +148,15 @@ body {
     margin-left: calc(50%);
 }
 
+/* Event Content */
+.event-content {
+    display: inline-block;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 400px;
+}
+
 /* Event Icons */
 .event-icon {
     width: 60px;
@@ -159,4 +168,32 @@ body {
     justify-content: center;
     color: white;
     font-size: 1.5rem;
+}
+
+/* Ladder Styles */
+.ladder {
+    position: relative;
+    min-height: 100%;
+}
+
+.ladder-rail {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background: linear-gradient(to bottom, #8B5CF6, #06B6D4);
+    border-radius: 4px;
+}
+
+/* Ladder Rungs */
+.ladder-rung {
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background: linear-gradient(90deg, #8B5CF6, #06B6D4);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
 }
