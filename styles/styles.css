@@ -111,16 +111,106 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Timeline Section */
+.timeline-section {
+    background: #1a1a3e;
+    padding: 6rem 0;
+    position: relative;
+}
+
+.timeline-container {
+    position: relative;
+    background: linear-gradient(to bottom, #1a1a3e, #2d2d5f);
+    padding: 4rem 0;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* Ladder Styles */
+.ladder {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    min-height: 100%;
+}
+
+.ladder-rail {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background: linear-gradient(to bottom, #8B5CF6, #06B6D4);
+    transform: translateX(-50%);
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Timeline Events */
 .timeline-event {
+    position: relative;
+    margin: 4rem 0;
+    transform: translateY(50px);
+}
+
+.timeline-event.left {
+    text-align: right;
+}
+
+.timeline-event.right {
+    text-align: left;
+}
+
+/* Event Content */
+.event-content {
     display: inline-block;
     background: white;
     border-radius: 20px;
     padding: 2rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     max-width: 400px;
+    position: relative;
+    border: 2px solid transparent;
 }
 
-/* Events */
-.event-title{
+.timeline-event.left .event-content {
+    margin-right: calc(50% + 40px);
+}
+
+.timeline-event.right .event-content {
+    margin-left: calc(50% + 40px);
+}
+
+/* Event Icons */
+.event-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.timeline-event.left .event-icon {
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-event.right .event-icon {
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Event Details */
+.event-title {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #2D3748;
@@ -136,54 +226,6 @@ body {
     font-size: 0.95rem;
     color: #4A5568;
     line-height: 1.6;
-}
-
-.timeline-event.left {
-    text-align: right;
-    margin-right: calc(50%);
-}
-
-.timeline-event.right {
-    text-align: left;
-    margin-left: calc(50%);
-}
-
-/* Event Content */
-.event-content {
-    display: inline-block;
-    background: white;
-    border-radius: 20px;
-    padding: 2rem;
-    max-width: 400px;
-}
-
-/* Event Icons */
-.event-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #8B5CF6, #06B6D4);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-}
-
-/* Ladder Styles */
-.ladder {
-    position: relative;
-    min-height: 100%;
-}
-
-.ladder-rail {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    height: 100%;
-    width: 8px;
-    background: linear-gradient(to bottom, #8B5CF6, #06B6D4);
-    border-radius: 4px;
 }
 
 /* Ladder Rungs */
