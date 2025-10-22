@@ -92,23 +92,42 @@ body {
     color: #667eea;
 }
 
-/* Timeline Section */
-.timeline-section {
-    background: #1a1a3e;
+/* Section Styles */
+section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.timeline-title {
+.section-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
     color: white;
 }
 
-.timeline-subtitle {
+.section-subtitle {
     text-align: center;
     font-size: 1.1rem;
     color: #b8b8d1;
     margin-bottom: 3rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 6rem 0;
+    background: #1a1a3e;
+    position: relative;
+    margin-top: 0;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #b8b8d1;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Timeline Section */
