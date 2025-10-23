@@ -340,6 +340,12 @@ section {
     gap: 1.5rem;
 }
 
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
 .form-input,
 .form-textarea {
     background: rgba(255, 255, 255, 0.05);
