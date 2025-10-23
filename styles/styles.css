@@ -52,6 +52,13 @@ body {
     border: 2px solid rgba(102, 126, 234, 0.3);
 }
 
+.nav-logo span {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
