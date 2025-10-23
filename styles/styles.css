@@ -273,7 +273,8 @@ section {
     margin-top: 3rem;
 }
 
-.contact-info h3 {
+.contact-info h3,
+.contact-form h3 {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 1.5rem;
@@ -330,4 +331,42 @@ section {
     background: linear-gradient(135deg, #667eea, #764ba2);
     border-color: #667eea;
     transform: translateY(-3px);
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-input,
+.form-textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #888;
+}
+
+.form-button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
 }
