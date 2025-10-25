@@ -209,6 +209,28 @@ section {
     position: relative;
 }
 
+/* Timeline Controls */
+.timeline-controls {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.timeline-toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
 .timeline-container {
     position: relative;
     background: linear-gradient(to bottom, #1a1a3e, #2d2d5f);
