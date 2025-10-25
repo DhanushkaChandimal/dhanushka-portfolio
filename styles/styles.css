@@ -179,6 +179,10 @@ section {
     position: relative;
 }
 
+.skills-container {
+    display: flex;
+}
+
 .tech-item {
     display: flex;
     flex-direction: column;
