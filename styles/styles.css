@@ -238,6 +238,7 @@ section {
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
@@ -245,6 +246,10 @@ section {
     background: linear-gradient(135deg, #764ba2, #667eea);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.timeline-toggle-btn:active {
+    transform: translateY(0);
 }
 
 /* Timeline Container Hidden State */
