@@ -362,6 +362,23 @@ section {
     line-height: 1.6;
 }
 
+/* Tech Stack */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 /* Ladder Rungs */
 .ladder-rung {
     position: absolute;
