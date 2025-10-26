@@ -231,6 +231,12 @@ section {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
+.timeline-toggle-btn:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
 .timeline-container {
     position: relative;
     background: linear-gradient(to bottom, #1a1a3e, #2d2d5f);
