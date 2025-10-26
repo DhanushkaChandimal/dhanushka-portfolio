@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleText.textContent = 'Show Timeline';
             toggleIcon.className = 'fas fa-eye';
             isHidden = true;
+
+            // Smooth scroll to contacts section after hiding
+            setTimeout(() => {
+                const contactssSection = document.getElementById('contact');
+                if (contactssSection) {
+                    contactssSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300);
         } else {
             // Show timeline
             timelineContainer.classList.remove('hidden');
