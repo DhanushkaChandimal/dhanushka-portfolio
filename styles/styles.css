@@ -245,6 +245,14 @@ section {
     max-width: 100vw;
 }
 
+/* Timeline Container Hidden State */
+.timeline-container.hidden {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+}
+
 /* Ladder Styles */
 .ladder {
     position: relative;
