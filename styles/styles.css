@@ -296,6 +296,10 @@ section {
     text-align: left;
 }
 
+.timeline-event.center {
+    text-align: center;
+}
+
 /* Event Content */
 .event-content {
     display: inline-block;
@@ -314,6 +318,11 @@ section {
 
 .timeline-event.right .event-content {
     margin-left: calc(50% + 40px);
+}
+
+.timeline-event.center .event-content {
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 /* Event Icons */
@@ -341,6 +350,12 @@ section {
     left: -30px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.timeline-event.center .event-icon {
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
 }
 
 /* Event Details */
