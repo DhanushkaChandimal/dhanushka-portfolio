@@ -394,6 +394,20 @@ section {
     font-weight: 500;
 }
 
+/* Certifications */
+.certifications {
+    margin-top: 1rem;
+}
+
+.cert-badge {
+    background: linear-gradient(135deg, #F59E0B, #EF4444);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 /* Ladder Rungs */
 .ladder-rung {
     position: absolute;
