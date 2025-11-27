@@ -232,6 +232,8 @@ section {
 .tech-item span {
     color: #b8b8d1;
     text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 /* Timeline Section */
