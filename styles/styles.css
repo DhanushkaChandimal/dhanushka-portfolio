@@ -191,6 +191,13 @@ section {
     padding: 2.5rem 2rem;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(102, 126, 234, 0.5);
 }
 
 .skill-category h3 {
@@ -204,6 +211,7 @@ section {
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .tech-item {
