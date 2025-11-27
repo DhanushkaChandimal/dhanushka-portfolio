@@ -187,12 +187,23 @@ section {
 }
 
 .skill-category {
-    display: flex;
-    flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.05);
     padding: 2.5rem 2rem;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-category h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tech-item {
