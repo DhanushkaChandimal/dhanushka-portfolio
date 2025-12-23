@@ -531,6 +531,11 @@ section {
     animation: pulse 2s infinite;
 }
 
+/* Projects Section */
+.projects-section {
+    background: #0f0f23;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 6rem 0;
