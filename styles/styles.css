@@ -537,6 +537,16 @@ section {
     padding: 6rem 0;
 }
 
+.github-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.github-link i {
+    margin-left: 0.2rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
