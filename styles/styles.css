@@ -541,6 +541,12 @@ section {
     color: #667eea;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    color: #764ba2;
+    text-decoration: underline;
 }
 
 .github-link i {
