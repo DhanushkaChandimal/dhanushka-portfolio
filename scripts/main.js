@@ -3,8 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const timelineContainer = document.getElementById('timelineContainer');
     const toggleText = toggleBtn.querySelector('.toggle-text');
     const toggleIcon = toggleBtn.querySelector('i');
-    
+    const navToggle = document.querySelector('.nav-toggle');
+
     let isHidden = false;
+
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+    });
     
     toggleBtn.addEventListener('click', function() {
         if (!isHidden) {
