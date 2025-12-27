@@ -84,6 +84,19 @@ body {
     color: #667eea;
 }
 
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
