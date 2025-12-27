@@ -796,6 +796,30 @@ section {
     line-height: 1.6;
 }
 
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.2rem;
+}
+
+.footer-links ul li a {
+    color: #b8b8d1;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #667eea;
+}
+
 .footer-contact p {
     color: #b8b8d1;
     margin-bottom: 0.5rem;
