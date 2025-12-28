@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleIcon.className = 'fas fa-eye';
             isHidden = true;
 
-            // Smooth scroll to contacts section after hiding
+            // Smooth scroll to projects section after hiding
             setTimeout(() => {
-                const contactssSection = document.getElementById('contact');
-                if (contactssSection) {
-                    contactssSection.scrollIntoView({ behavior: 'smooth' });
+                const projectsSection = document.getElementById('projects');
+                if (projectsSection) {
+                    projectsSection.scrollIntoView({ behavior: 'smooth' });
                 }
             }, 300);
         } else {
