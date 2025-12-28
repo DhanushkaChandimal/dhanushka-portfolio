@@ -532,6 +532,26 @@ section {
     background: linear-gradient(90deg, #F59E0B, #EF4444, #8B5CF6) !important;
 }
 
+/* Milestone Styles */
+.milestone-icon {
+    background: linear-gradient(135deg, #10B981, #06B6D4);
+}
+
+.milestone-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #10B981, #3B82F6);
+    color: white;
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    border: 3px solid rgba(16, 185, 129, 0.3);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
 /* Ladder Rungs */
 .ladder-rung {
     position: absolute;
