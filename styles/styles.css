@@ -877,7 +877,19 @@ section {
 @media (max-width: 768px) {
     /* Responsive Nav Bar */
     .nav-menu {
-        display: none;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: rgba(15, 15, 35);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
     }
 
     .nav-toggle {

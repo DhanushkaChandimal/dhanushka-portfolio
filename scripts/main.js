@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleText = toggleBtn.querySelector('.toggle-text');
     const toggleIcon = toggleBtn.querySelector('i');
     const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
 
     let isHidden = false;
 
     navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
     });
     
