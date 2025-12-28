@@ -443,6 +443,7 @@ section {
     max-width: 400px;
     position: relative;
     border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .timeline-event.left .event-content {
@@ -456,6 +457,10 @@ section {
 .timeline-event.center .event-content {
     margin: 0 auto;
     max-width: 500px;
+}
+
+.event-content:hover {
+    transform: translateY(-10px);
 }
 
 /* Event Icons */
@@ -497,12 +502,14 @@ section {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #2D3748;
+    font-weight: 600;
 }
 
 .event-date {
     font-size: 1rem;
     color: #8B5CF6;
     margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .event-description {
