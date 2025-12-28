@@ -50,9 +50,15 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
+            const submitButton = this.querySelector('.form-button');
+            const originalText = submitButton.textContent;
+            
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
             const formData = new FormData(this);
             
-            formData.append('_captcha', 'true');
+            formData.append('_captcha', 'false');
             formData.append('_subject', 'New message from Personal Website');
             
             try {
@@ -73,6 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
             } catch (error) {
                 alert('❌ Oops! Something went wrong. Please try again or email me directly at dhanushkamcr@gmail.com');
                 console.error('Form submission error:', error);
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
             }
         });
     }
