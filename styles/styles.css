@@ -940,6 +940,16 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Responsive Nav Bar */
+    .nav-logo-img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .nav-logo a {
+        font-size: 1.3rem;
+        gap: 0.6rem;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -970,6 +980,21 @@ section {
 
     .nav-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* Responsive Skills Section */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .skill-category {
+        padding: 2rem 1.5rem;
+    }
+    
+    .tech-item img {
+        width: 35px;
+        height: 35px;
     }
 
     /* Responsive Hero Section */
@@ -1013,6 +1038,70 @@ section {
     
     .ladder-rung {
         display: none;
+    }
+
+    /* Responsive Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Responsive Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Responsive Footer Section */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Responsive Hero Section */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-contact {
+        font-size: 0.8rem;
+    }
+
+    /* Responsive Timeline Section */
+    .event-content {
+        max-width: 280px;
+        padding: 1.2rem;
+    }
+    
+    .event-title {
+        font-size: 1.2rem;
+    }
+    
+    .tech-stack {
+        gap: 0.3rem;
+    }
+
+    /* Responsive Projects Section */
+    .project-card {
+        padding: 1.5rem;
     }
 }
 
