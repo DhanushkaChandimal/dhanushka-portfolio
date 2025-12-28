@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleIcon = toggleBtn.querySelector('i');
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const form = document.querySelector('.form');
 
     let isHidden = false;
 
@@ -43,4 +44,36 @@ document.addEventListener('DOMContentLoaded', function() {
             isHidden = false;
         }
     });
+
+    // Form submission with FormSubmit
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            formData.append('_captcha', 'true');
+            formData.append('_subject', 'New message from Personal Website');
+            
+            try {
+                const response = await fetch('https://formsubmit.co/dhanushkamcr@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    alert('✅ Thank you for your message! I will get back to you soon.');
+                    this.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                alert('❌ Oops! Something went wrong. Please try again or email me directly at dhanushkamcr@gmail.com');
+                console.error('Form submission error:', error);
+            }
+        });
+    }
 });
