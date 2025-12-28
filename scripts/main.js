@@ -12,7 +12,28 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
     });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+            
+            // Close mobile menu
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        });
+    });
     
+    // Timeline Toggle Functionality
     toggleBtn.addEventListener('click', function() {
         if (!isHidden) {
             // Hide timeline
