@@ -522,6 +522,7 @@ section {
     animation: certPulse 2s infinite;
 }
 
+/* Career Transition Styles */
 .event-icon.career-change {
     background: linear-gradient(135deg, #F59E0B, #EF4444);
     animation: rotate 4s linear infinite;
