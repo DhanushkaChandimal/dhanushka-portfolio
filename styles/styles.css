@@ -18,6 +18,27 @@ body {
     padding: 0 2rem;
 }
 
+/* Section Styles */
+section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #b8b8d1;
+    margin-bottom: 3rem;
+}
+
 /* Nav Bar */
 .navbar {
     position: fixed;
@@ -125,6 +146,7 @@ body {
     justify-content: center;
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d2d5f 100%);
     color: white;
+    padding-top: 120px;
 }
 
 .hero-content {
@@ -165,6 +187,7 @@ body {
     font-size: 1.1rem;
     color: #b8b8d1;
     margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 .hero-contact {
@@ -224,27 +247,6 @@ body {
     background: linear-gradient(135deg, #667eea, #764ba2);
     border-color: #667eea;
     transform: translateY(-5px);
-}
-
-/* Section Styles */
-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #b8b8d1;
-    margin-bottom: 3rem;
 }
 
 /* About Section */
@@ -956,6 +958,16 @@ section {
 
     .nav-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Responsive Hero Section */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-contact {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     /* Responsive Timeline */
