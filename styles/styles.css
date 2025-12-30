@@ -1100,6 +1100,15 @@ section {
         gap: 2rem;
         text-align: center;
     }
+    
+    /* Responsive Back to Top Button */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
